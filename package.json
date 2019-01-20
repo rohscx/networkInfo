@@ -1,0 +1,27 @@
+{
+  "name": "networkinfo",
+  "version": "1.0.0",
+  "description": "returns IPV4 Network information with CIDR notation.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohscx/networkInfo.git"
+  },
+  "author": "Skaffen~Amtiskaw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rohscx/networkInfo/issues"
+  },
+  "homepage": "https://github.com/rohscx/networkInfo#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-google": "^0.11.0"
+  },
+  "dependencies": {
+    "hapi": "^17.8.1",
+    "hapi-pino": "^5.2.0"
+  }
+}
