@@ -15,11 +15,14 @@ RUN cd /home \
   && git clone https://github.com/rohscx/networkInfo.git \
   && cd /home/networkInfo \
   && npm install \
-  && cd lib/nodeUtilz \
+  && cd lib/nodeUtilz\
+  && git pull \
   && npm install \
   && ls \
   && ls /home \
-  && ls /home/lib
+  && ls /home/networkInfo \
+  && ls /home/networkInfo/lib \
+  && ls /home/networkInfo/lib nodeUtilz
 
 # Make a user a non admin user at some point
 #RUN echo sleep 30 > /etc/rc.local
