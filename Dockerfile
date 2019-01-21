@@ -19,11 +19,7 @@ RUN cd /home \
   && git clone https://github.com/rohscx/nodeUtilz.git \
   && cd nodeUtilz\
   && npm install \
-  && ls \
-  && ls /home \
-  && ls /home/networkInfo \
-  && ls /home/networkInfo/lib \
-  && ls /home/networkInfo/lib nodeUtilz
+  && ls /home/networkInfo/lib/nodeUtilz
 
 # Make a user a non admin user at some point
 #RUN echo sleep 30 > /etc/rc.local
