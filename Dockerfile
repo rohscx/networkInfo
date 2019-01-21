@@ -34,8 +34,4 @@ CMD [ "-s" ]
 # Set Docker default user and  working directory
 WORKDIR /home/networkInfo
 
-<<<<<<< HEAD
 EXPOSE  3000/tcp
-=======
-EXPOSE  3000:3000
->>>>>>> 1ff192d96bf06464b37f6dc0277d0f79c7ef53ed
