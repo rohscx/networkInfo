@@ -1,7 +1,7 @@
-FROM ubuntu
+FROM node
 
 MAINTAINER Rohscx <emailaddress.com>
-# Update node
+# Update node:latest
 RUN apt-get update
 RUN apt-get install git-core
 
