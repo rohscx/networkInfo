@@ -17,7 +17,7 @@ RUN cd /home \
   && npm install \
   && ls \
   && ls lib \
-  && cd lib/nodeUtilz \
+  && cd /home/networkInfo/lib/nodeUtilz \
   && npm install
 
 # Make a user a non admin user at some point
