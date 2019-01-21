@@ -16,7 +16,7 @@ RUN cd /home \
   && cd /home/networkInfo \
   && npm install \
   && ls \
-  && ls lib
+  && ls lib \
   && cd lib/nodeUtilz \
   && npm install
 
