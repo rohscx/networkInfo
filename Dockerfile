@@ -15,8 +15,9 @@ RUN cd /home \
   && git clone https://github.com/rohscx/networkInfo.git \
   && cd /home/networkInfo \
   && npm install \
-  && cd lib/nodeUtilz\
-  && git pull \
+  && cd lib \
+  && git clone https://github.com/rohscx/nodeUtilz.git \
+  && cd nodeUtilz\
   && npm install \
   && ls \
   && ls /home \
