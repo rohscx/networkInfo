@@ -15,7 +15,9 @@ RUN cd /home \
   && git clone https://github.com/rohscx/networkInfo.git \
   && cd /home/networkInfo \
   && npm install \
-  && cd /home/networkInfo/lib/nodeUtliz \
+  && ls \
+  && ls lib
+  && cd lib/nodeUtilz \
   && npm install
 
 # Make a user a non admin user at some point
