@@ -18,7 +18,8 @@ RUN cd /home \
   && ls \
   && ls lib \
   && cd /home/networkInfo/lib/nodeUtilz \
-  && npm install
+  && npm install \
+  && ls /home/networkInfo/lib/nodeUtilz \
 
 # Make a user a non admin user at some point
 #RUN echo sleep 30 > /etc/rc.local
