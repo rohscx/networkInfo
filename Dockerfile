@@ -13,7 +13,7 @@ RUN apt-get install git-core
 # Sub NPM install
 RUN cd /home \
   && git clone https://github.com/rohscx/networkInfo.git \
-  && cd /home/networkInfo \
+  && cd networkInfo \
   && npm install \
   && cd lib \
   && git clone https://github.com/rohscx/nodeUtilz.git \
