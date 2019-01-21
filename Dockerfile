@@ -6,18 +6,17 @@ RUN apt-get update
 RUN apt-get install git-core
 
 # Pull Git Image
-RUN cd /home
-RUN git clone https://github.com/rohscx/networkInfo.git
-
+# Clone Repo
 # Change to Root Directory
-RUN cd /home/networkInfo
-
 # Main NPM install
-RUN npm install
-
+# Change to Sub Directory
 # Sub NPM install
-RUN cd /home/networkInfo/lib/nodeUtliz
-RUN npm install
+RUN cd /home \
+  && git clone https://github.com/rohscx/networkInfo.git \
+  && cd /home/networkInfo \
+  && npm install \
+  && cd /home/networkInfo/lib/nodeUtliz \
+  && npm install
 
 # Make a user a non admin user at some point
 #RUN echo sleep 30 > /etc/rc.local
