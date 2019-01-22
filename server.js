@@ -23,7 +23,7 @@ const init = async () => {
         const splitCidr = ipCidr.split(',');
         return await netInfo(splitCidr);
       } else {
-        return 'Hello, ' + encodeURIComponent(ipCidr) + '!';
+        return `acceptable Parameters: /?ipCidr= x.x.x.x/x e.g. /?ipCidr=12.1.2.3/17`;
       }
       request.logger.info('In handler %s', request.path);
       // return 'Hello, ' + await netInfo(request.params.network) + '!';

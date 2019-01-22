@@ -9,11 +9,9 @@
 
 START_DELAY=5
 
-TFTP_EDITED=tftp_conf_edited
-TFTP_CONFIG=/etc/default/tftpd-hpa
-TFTP_USER_HOME=~/
-BIND_DNS_OG_CFG=named.conf.recursive
-BIND_DNS_NEW_CFG=named.conf
+APP_ROOT_DIR=/home/networkInfo
+APP_DEPENDECY000_DIR=/home/networkInfo/lib/nodeUtilz
+USER_HOME=~/
 SHELL_EXIT=exit
 
 # Error codes
@@ -37,6 +35,11 @@ initConfig() {
     # sed -i "s/--secure/--secure --create/" ${TFTP_CONFIG}
     # touch ${TFTP_EDITED}
     echo "API configuration initializing........."
+    git pull
+    echo "API dependency initializing........."
+    cd ${APP_DEPENDECY000_DIR}
+    git pull
+    cd ${APP_ROOT_DIR}
   else
     echo "API configuration already initialized........."
   fi
